@@ -55,6 +55,7 @@ img{
 /*layout設計*/
 :root{
     --color-primary: #3D1101;
+    --color-background: #EFE9E7;
 }
 
 .wrap{
@@ -153,53 +154,34 @@ img{
     width: 100%;
     height: 420px;
     background: url(../images/header_desktop.png) no-repeat;
-    background-position: center center;
-    /*position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;*/
+    background-position: center center;  
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.catch-copy{
-    position: absolute;
-    top: 25%;
-    right: 20%;
-    left: 20%;
+.banner h2{
     background-color: #00000035;
     padding: 20px;
-}
-.catch-copy h2{
     line-height: 1.5;
     font-size: 36px;
     color: white;
     text-align: center;
 }
-.catch-copy p{
+.banner p{
+    background-color: #00000035;
     color: white;
-    margin: 16px 0;
     text-align: center;
     line-height: 1.5;
+    padding: 20px;
 }
 /*banner for tablet size*/
 @media(max-width: 768px){
-        .catch-copy{
-        top: 20%;
-        left: 10%;
-        right: 10%;
-    }
 }
 /*banner for phone size*/
 @media(max-width: 569px){
     .banner{
         background: url(../images/header_mobile.png) no-repeat;
-    }
-    .catch-copy{
-        top: 15%;
-        left: 5%;
-        right: 5%;
-    }
-    .catch-copy h2{
-        line-height: 1.5;
     }
 }
 
@@ -291,4 +273,70 @@ img{
       .sns{
         width: 99%;
       }
+}
+
+/*.index-content: secret* for pc size*/
+.secret{
+    padding: 20px;
+    background-color: var(--color-background);
+}
+.line{
+    margin: 60px auto;
+    width: 50%;
+    height: 1px;
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.line>h3{
+    line-height: 2;
+    font-size: 20px;
+    background-color: var(--color-background);
+    padding: 5px;
+    text-align: center;
+    color: var(--color-primary);
+}
+.secret ul{
+    display: flex;
+    justify-content: space-around;
+}
+.secret li{
+    text-align: center;
+    width: 23%;
+    padding: 10px 0;
+}
+.secret li h4{
+    font-size: 18px;
+    color: var(--color-primary);
+    padding: 20px 0;
+}
+.secret li p{
+    color: var(--color-primary);
+    text-align: left;
+}
+/*.index-content: secret* for tablet size*/
+@media(max-width: 768px){
+    .secret ul{
+        flex-wrap: wrap;
+    }
+    .secret li{
+        width: 46%;
+        margin-bottom: 15px;
+    }
+}
+/*.index-content: secret* for phone size*/
+@media(max-width: 569px){
+    .line{
+        margin: 100px auto ;
+        height: 0px;
+    }
+    .secret li{
+        width: 98%;
+    }
+    .secret li p{
+        width: 70%;
+        margin: 0 auto;
+    }
 }
