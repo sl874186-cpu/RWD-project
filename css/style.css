@@ -431,6 +431,7 @@ img{
     color: var(--color-primary);
     font-size: 18px;
     padding: 20px 10px;
+    text-align: left;
 }
 .reviewer p{
     padding: 10px;
