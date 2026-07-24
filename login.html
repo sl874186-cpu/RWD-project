@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="../RWD-project/css/style.css">
     <script src="../RWD-project/js/jquery-4.0.0.min.js"></script>
     <script src="../RWD-project/js/all.js"></script>
     <script src="https://kit.fontawesome.com/7e3ed3a2f5.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>六角西餐廳｜登入</title>
 </head>
 <body>
     <div class="wrap">
@@ -17,9 +18,9 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="">首頁</a></li>
-                    <li><a href="">購物車</a></li>
-                    <li><a href="">登入</a></li>
+                    <li><a href="../RWD-project/index.html">首頁</a></li>
+                    <li><a href="../RWD-project/cart.html">購物車</a></li>
+                    <li><a href="./login.html">登入</a></li>
                 </ul>
             </div>
             <div class="button"><a href="#"><i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i></a></div>
@@ -29,8 +30,33 @@
                 <p>七夕絕對無法錯過的好滋味<br>
                     <i class="fa-solid fa-utensils"></i>六角大漢堡<i class="fa-solid fa-utensils"></i></p>
         </div>
-        <div class="login-content"></div>
-            
+        <div class="login-content">
+            <h3>六角西餐廳</h3>
+            <h4>享受美食好味道</h4>
+            <form class="login-form">
+                <fieldset>
+                    <p>LOGIN</p>
+                    <label for="stacked-email">Email Address*</label>
+                    <div class="email">
+                        <input id="stacked-email" type="email"/> 
+                        <i class="fa-regular fa-envelope" style="color: rgb(158, 136, 128);"></i>
+                    </div>
+
+                    <label for="stacked-password">Password</label>
+                    <div class="password">
+                        <input id="stacked-password" type="password" />
+                        <i class="fa-solid fa-lock" style="color: rgb(158, 136, 128);"></i>
+                    </div>
+
+                    <a class="forget" href="#">忘記密碼?</a>
+                    <div class="form-btn">                    
+                     <a href="#" class="btn-regist">註冊</a>
+                     <a href="#" class="btn-login">登入</a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
         <div class="footer">
             <div class="about">
                 <h3>關於 六角西餐廳</h3>
@@ -55,6 +81,9 @@
                 </ul>
 
             </div>
+        </div>
+        <div class="scroll-up">
+            <a href="#"><i class="fa-solid fa-angle-up" style="color: rgb(239, 233, 231);"></i></a>
         </div>
     </div>
 </body>

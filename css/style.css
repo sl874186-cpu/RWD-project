@@ -64,6 +64,27 @@ img{
     margin: 0 auto;
 }
 
+/*Scroll up btn*/
+.scroll-up {
+ background-color: var(--color-primary);
+ border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 1%;
+  display: none;
+}
+.scroll-up a{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.scroll-up .fa-angle-up{
+    font-size: 36px;
+}
+
 
 /*header for pc size*/
 .header{
@@ -513,7 +534,7 @@ img{
 @media(max-width: 569px){
 }
 
-/*.cart-content: sidebar for pc size*/
+/*.cart-content for pc size*/
 .cart-content{
     background-color: var(--color-background);
     display: flex;
@@ -647,7 +668,13 @@ img{
     text-align: center;
     text-decoration: none;
 }
-/*.cart-content: form for tablet size*/
+.items-inner .active {
+    border: 2px solid var(--color-background);
+    background-color: #FF5E45;
+    color: var(--color-background);
+}
+
+/*.cart-content for tablet size*/
 @media(max-width: 768px){
     .cart-content{
         flex-direction: column;
@@ -681,9 +708,115 @@ img{
      
     }
 }
-/*.cart-content: form for tablet size*/
+/*.cart-content for phone size*/
 @media(max-width: 596px){
     .items-inner ul li{
         width: 98%;
+    }
+}
+
+.login-content{
+    width: 100%;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    padding-bottom: 40px;
+}
+h3{
+    padding-top: 50px;
+    font-size: 48px;
+    text-align: center;
+}
+h4{
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+.login-form fieldset{
+    margin: 30px auto 0;
+    padding: 15px;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #F56C23;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+}
+fieldset p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+}
+fieldset label{
+    display: block;
+    padding: 10px 0;
+    margin: 0 5%;
+}
+.email,.password {
+    position: relative;
+}
+
+.email input, .password input {
+    text-indent: 30px;
+    padding: 3px 0px;
+    width: 90%;
+    margin: 0 5%;
+}
+.email .fa-envelope, .password .fa-lock{
+    position: absolute;
+    top: 5px;
+    left: 6%; 
+    z-index: 1;
+    font-size: 18px;
+}
+
+.forget{
+    display: block;
+    text-decoration: none;
+    padding: 10px 5%;
+    color: #F56C23;
+}
+.form-btn{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.btn-regist{
+    display: block;
+    width: 40%;
+    padding: 5px 0;
+    background-color: #9B9796;
+    color: white;
+    border: 1px solid #9B9796;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-regist:hover{
+    background-color: rgba(121, 118, 117, 1.00);
+}
+.btn-login{
+    display: block;
+    width: 40%;
+    padding: 5px 0;
+    background-color: #F56C23;
+    color: white;
+    border: 1px solid #F56C23;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.btn-login:hover{
+    background-color: rgba(223, 98, 32, 1.00);
+}
+
+/*.login-content for tablet size*/
+@media(max-width: 768px){
+    .login-form fieldset{
+        width: 48%;
+    }
+}
+/*.login-content for tablet size*/
+@media(max-width: 569px){
+    .login-form fieldset{
+        width: 80%;
     }
 }
